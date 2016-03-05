@@ -1,0 +1,88 @@
+// bower:scss
+// endbower
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.calender {
+    background-color: #404040;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -300px;
+
+    ul {
+        padding: 0;
+        width: 80%;
+        height: 300px;
+        position: relative;
+        top: 50%;
+        margin: -150px auto 0;
+    }
+
+
+    li {
+        list-style: none;
+        display: inline-block;
+        float: left;
+        width: 80px;
+        height: 80px;
+        text-align: right;
+        color: #fff;
+        border: 2px solid #fff;
+        margin: 2px;
+        padding: 5px;
+        cursor: pointer;
+
+        &.signed {
+            background-image: url(../images/signed.png);
+            background-repeat: no-repeat;
+            background-size: 40px 40px;
+            background-position: center;
+        }
+    }
+}
+
+.control-board {
+    width: 60%;
+    min-width: 200px;
+    height: 60px;
+    line-height: 60px;
+    margin: 10px auto;
+    text-align: center;
+    p {
+        display: inline-block;
+        width: 80px;
+        margin: 0;
+    }
+    button {
+        width: 60px;
+        height: 50px;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: 50px 40px;
+        background-position: center;
+        border: none;
+        cursor: pointer;
+    }
+    button:first-child {
+        background-image: url(../images/l.png);
+        float: left;
+    }
+    button:last-child {
+        background-image: url(../images/r.png);
+        float: right;
+    }
+    button:focus {
+        outline: 0;
+    }
+    button:active {
+        background-color: #ccc;
+    }
+}
